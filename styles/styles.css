@@ -9,14 +9,17 @@
     background-color: #f1a6daa9;
     padding: 20px;
 }
+
 .ul-navbar a {
     text-decoration: none;
     color: black;
-    
+
 }
+
 .ul-navbar a:hover {
     color: bisque;
 }
+
 .ul-navbar {
     display: flex;
 }
@@ -47,4 +50,45 @@
 
 .banner1 h3 {
     font-size: 16px;
+}
+
+.contenedor {
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "caja1 caja2 caja3 caja4";
+    
+}
+
+.caja1 {
+    grid-area: caja1;
+}
+
+.caja2 {
+    grid-area: caja2;
+}
+
+.caja3 {
+    grid-area: caja3;
+}
+
+.caja4 {
+    grid-area: caja4;
+}
+
+.contenedor img {
+    width: 50vh;
+}
+
+.banner2 {
+    padding: 20px;
+    
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    background-color:#e1cff3
 }
