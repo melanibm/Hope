@@ -7,8 +7,16 @@
 .navbar {
     display: flex;
     background-color: #f1a6daa9;
+    padding: 20px;
 }
-
+.ul-navbar a {
+    text-decoration: none;
+    color: black;
+    
+}
+.ul-navbar a:hover {
+    color: bisque;
+}
 .ul-navbar {
     display: flex;
 }
@@ -20,16 +28,23 @@
     list-style-type: none;
 }
 
-.baner1-bienvenidos {
+.banner1-bienvenidos {
     background-color: #d2a5fb;
     display: flex;
-    align-items: center;
+    justify-content: center;
+    margin: 16px;
+    padding: 16px;
+    height: 30vh;
 }
-.baner1 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex: auto;
-    padding: 10px;
-    margin: 10px;
+
+
+.banner1 h1 {
+    font-size: 24px;
+    padding: 20px;
+    text-decoration: underline;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.banner1 h3 {
+    font-size: 16px;
 }
