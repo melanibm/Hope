@@ -54,35 +54,17 @@
 }
 
 .contenedor {
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: "caja1 caja2 caja3 caja4";
-
-}
-
-.caja1 {
-    grid-area: caja1;
-}
-
-.caja2 {
-    grid-area: caja2;
-}
-
-.caja3 {
-    grid-area: caja3;
-}
-
-.caja4 {
-    grid-area: caja4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .contenedor img {
     width: 50vh;
 }
+
+
+
 
 .banner2 {
     margin: 60px;
@@ -97,6 +79,7 @@
     padding: 20px;
     gap: 15px;
     justify-content: center;
+
 }
 
 .marca {
@@ -108,6 +91,7 @@
     border-radius: 30px;
     overflow: hidden;
 }
+
 .marca-info {
     display: flex;
     flex-direction: column;
@@ -116,12 +100,24 @@
 }
 
 .marca-logo {
-    
+
     width: 100%;
     margin: 10px;
     border-radius: 10px;
 
 }
+
 .marca-titulo {
     font-size: 30px;
+}
+
+.ul-footer {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #f1a6daa9;
+    padding: 20px;
+    color: black;
+    list-style-type: none;
+    gap: 10px;
+
 }
