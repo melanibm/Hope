@@ -121,3 +121,80 @@
     gap: 10px;
 
 }
+
+/*pagina de quienes somos*/
+
+.main-quienessomos {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+.info-quienessomos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding-left:1rem;
+}
+.logo-hope {
+    padding: 3rem;
+    width: 100vh;
+    border-radius: 6rem;
+    margin: 3rem;
+}
+
+
+/*Empezamos con la tienda online */
+.tienda {
+    padding: 1rem;
+}
+.tienda-titulo {
+    text-align: center;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.tienda-titulo h3 {
+    background-color: #e1cff376;
+    font-size: 2rem;
+    padding: 1rem;
+    margin: 0.5rem;
+    border-radius: 1rem;
+}
+.tienda-titulo h5 {
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-style: italic;
+    
+}
+.tienda-items {
+    display: flex;
+    gap: 1rem;
+}
+.tienda-item {
+    flex: 1;
+    flex-direction:column;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin: 0.5rem;
+    background-color: #e1cff3;
+    border-style:dotted ;
+    
+}
+.tienda-item:hover {
+    border-style: hidden;
+}
+.tienda-item img {
+    max-width: 100%;
+    border-radius: 1rem;
+}
+.tienda-item h4 {
+    text-align: center;
+    font-size: 1.5rem;
+}
+.tienda-item p {
+    text-align: center;
+}
