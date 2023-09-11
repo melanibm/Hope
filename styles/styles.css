@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-.ul-navbar {
+.ul_navbar {
     display: flex;
     background-color: #f1a6daa9;
     padding: 20px;
@@ -13,22 +13,22 @@
     gap: 10px;
 }
 
-.li-navbar a {
+.li_navbar a {
     text-decoration: none;
     color: black;
     font-size: 20px;
 
 }
 
-.li-navbar.active a {
+.li_navbar.active a {
     text-decoration: underline double;
 }
 
-.li-navbar a:hover {
+.li_navbar a:hover {
     color: bisque;
 }
 
-.banner1-bienvenidos {
+.banner1_bienvenidos {
     background-color: #d2a5fb;
     border-radius: 10px;
     display: flex;
@@ -41,14 +41,14 @@
 }
 
 
-.banner1-bienvenidos h1 {
+.banner1_bienvenidos h1 {
     font-size: 24px;
     padding: 20px;
     text-decoration: underline;
     font-family: 'Courier New', Courier, monospace;
 }
 
-.banner1-bienvenidos h3 {
+.banner1_bienvenidos h3 {
     font-size: 20px;
 
 }
@@ -92,14 +92,14 @@
     overflow: hidden;
 }
 
-.marca-info {
+.marca_info {
     display: flex;
     flex-direction: column;
     padding-inline: 20px;
     gap: 20px;
 }
 
-.marca-logo {
+.marca_logo {
 
     width: 100%;
     margin: 10px;
@@ -107,11 +107,11 @@
 
 }
 
-.marca-titulo {
+.marca_titulo {
     font-size: 30px;
 }
 
-.ul-footer {
+.ul_footer {
     display: flex;
     justify-content: flex-end;
     background-color: #f1a6daa9;
@@ -124,12 +124,12 @@
 
 /*pagina de quienes somos*/
 
-.main-quienessomos {
+.main_quienessomos {
     display: flex;
     justify-items: center;
     align-items: center;
 }
-.info-quienessomos {
+.info_quienessomos {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -137,7 +137,7 @@
     gap: 1rem;
     padding-left:1rem;
 }
-.logo-hope {
+.logo_hope {
     padding: 3rem;
     width: 100vh;
     border-radius: 6rem;
@@ -149,31 +149,31 @@
 .tienda {
     padding: 1rem;
 }
-.tienda-titulo {
+.tienda_titulo {
     text-align: center;
     font-family: sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.tienda-titulo h3 {
+.tienda_titulo h3 {
     background-color: #e1cff376;
     font-size: 2rem;
     padding: 1rem;
     margin: 0.5rem;
     border-radius: 1rem;
 }
-.tienda-titulo h5 {
+.tienda_titulo h5 {
     padding: 1rem;
     font-size: 1.5rem;
     font-style: italic;
     
 }
-.tienda-items {
+.tienda_items {
     display: flex;
     gap: 1rem;
 }
-.tienda-item {
+.tienda_item {
     flex: 1;
     flex-direction:column;
     align-items: center;
@@ -184,17 +184,17 @@
     border-style:dotted ;
     
 }
-.tienda-item:hover {
+.tienda_item:hover {
     border-style: hidden;
 }
-.tienda-item img {
+.tienda_item img {
     max-width: 100%;
     border-radius: 1rem;
 }
-.tienda-item h4 {
+.tienda_item h4 {
     text-align: center;
     font-size: 1.5rem;
 }
-.tienda-item p {
+.tienda_item p {
     text-align: center;
 }
