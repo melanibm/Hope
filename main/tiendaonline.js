@@ -8,21 +8,21 @@ const COSTOENVIO = 500
 
 function compra(productos) {
     switch (productos.trim().toLowerCase()) {
-        case "body":
+        case "1":
             return BODY;
-        case "body10":
+        case "2":
             return BODY10;
-        case "accesorios":
+        case "3":
             return ACCESORIOS;
         default: 
-            return 0;
+            return alert("ingrese una opcion valida")
 
     }
 }
 
 // Ingeso de productos seleccionados
-alert("Bienvenido, Nuestros productos son: body, Body10, Accesorios")
-let productos = prompt("¿Que producto desea comprar?")
+alert("Bienvenido, Nuestros productos son: 1-body, 2-body10, 3-Accesorios")
+let productos = prompt("¿Que producto desea comprar? (Ingrese finalizar para terminar)")
 let total = 0
 let conteo = 0
 //revisar porque no aparece el total
@@ -31,7 +31,10 @@ while ((productos.trim().toLowerCase() !== "finalizar") && (productos.trim() !==
     total += compra(productos);
     conteo++;
     console.log("El producto #" + conteo + "ingresado es" + productos + " y va un total de: " + total);
-    productos = prompt("¿Que producto desea comprar?")
+    productos = prompt("¿Desea agregar otro producto?")
+    if (productos.trim().toLowerCase()=== "finalizar"){
+        break;
+    }
 }
 
 //Si se requiere envio
