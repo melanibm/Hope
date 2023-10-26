@@ -1,101 +1,105 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hope</title>
-    <link rel="stylesheet" href="styles/styles.css">
+    <title>Hope Shope</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./styles/styles.css">
 </head>
 
 <body>
-    <header>
 
-        <nav class="navbar">
-            <ul class="ul_navbar">
-                <a href="./index.html">
-                    <li class="li_navbar active">Inicio
-                </a></li>
-                <a href="./pages/quienes-somos.html">
-                    <li class="li_navbar">Quiénes Somos
-                </a></li>
-                <a href="./pages/tienda-online.html">
-                    <li class="li_navbar">Tienda Online
-                </a></li>
-            </ul>
-        </nav>
+    <div class="wrapper">
+        <aside>
+            <header>
+                
+                <a href="../index.html"><h1 class="logo active" >Hope Shope</h1></a>
+            </header>
+        
+            <nav>
+                <ul class="menu">
+                    
+                    <li>
+                       <a href="./pages/seccion-bebes.html"><button class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i> Sección Bebes</button></a>
+                    </li>
+                    <li>
+                        <a href="./pages/seccion-ninos.html"><button class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i> Sección Niños</button></a>
+                    </li>
+                    <li>
+                        <a href="./pages/accesorios.html"><button class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i> Accesorios</button></a>
+                    </li>
+                    <li>
+                        <a class="boton-menu boton-carrito" href="carrito.html"><i class="bi bi-bag-heart"></i> Carrito <span
+                                class="numerito">0</span></a>
+                    </li>
+                </ul>
+            </nav>
 
-    </header>
-    <main>
-        <section class="banner1_bienvenidos">
+            <footer>
+                <p class="texto-footer">© 2023 Melani B. Moran</p>
+            </footer>
 
-            <h1>Bienvenidos a Hope</h1>
-            <h3>Tu Tienda Online para Bebes y Niños</h3>
+        </aside>
+        <main>
+            <div class="wrapper-inicio">
+                <div class="banner1_bienvenidos">
 
-        </section>
+                    <h1>Bienvenidos a Hope</h1>
+                    <h3>Tu Tienda Online para Bebes y Niños</h3>
+                    <h4>+faltan modificaciones+</h4>
 
-        <section>
-            <div class="contenedor">
-                <div><img src="./image/banner.jpg" alt="campera"></div>
-                <div><img src="./image/banner1.jpg" alt="manta"></div>
-                <div><img src="./image/banner4.jpg" alt="gorro"></div>
-                <div><img src="./image/banner2.jpg" alt="saquito"></div>
-            </div>
-        </section>
-        <section>
-            <div class="banner2">
-                <h1>
-                    ¡Nuestras Marcas Favoritas!
-                </h1>
-            </div>
-        </section>
-        <section class="marcas">
-            <div class="marca">
-                <img src="./image/logo-geppeto.png" alt="logo.geppeto" class="marca-logo">
-                <div class="marca-info">
-                    <h4 class="marca_titulo">Geppeto</h4>
-                    <p class="marca_texto">Ropa para bebes y niños.
-                        talles desde los 9m a 16t.
-                    </p>
                 </div>
-            </div>
-            <div class="marca">
-                <img src="./image/logo.cocarter.png" alt="logo.cocarter" class="marca_logo">
-                <div class="marca_info">
-                    <h4 class="marca_titulo">Co.Carters</h4>
-                    <p class="marca_texto">Ropa para bebes y niños.
-                        talles desde RN a 6t.
-                    </p>
-                </div>
-            </div>
-            <div class="marca">
-                <img src="./image/logo-naranjo.b.jpg" alt="logo.naranjo" class="marca_logo">
-                <div class="marca_info">
-                    <h4 class="marca_titulo">Naranjo</h4>
-                    <p class="marca_texto">Ropa para bebes y niños.
-                        talles desde RN a 16t.
-                    </p>
-                </div>
-            </div>
-        </section>
 
-    </main>
+                <section>
+                    <div class="contenedor">
+                        <div><img src="./img/banner.jpg" alt="campera"></div>
+                        <div><img src="./img/banner2.jpg" alt="manta"></div>
+                        <div><img src="./img/banner4.jpg" alt="gorro"></div>
+                        <div><img src="./img/banner2.jpg" alt="saquito"></div>
+                    </div>
+                </section>
+                <section>
+                    <div class="banner2">
+                        <h1>
+                            ¡Nuestras Marcas Favoritas!
+                        </h1>
+                    </div>
+                </section>
+                <section class="marcas">
+                    <div class="marca">
+                        <img src="./img/logo-geppeto.png" alt="logo.geppeto" class="marca-logo">
+                        <div class="marca-info">
+                            <h4 class="marca_titulo">Geppeto</h4>
+                            <p class="marca_texto">Ropa para bebes y niños.
+                                talles desde los 9m a 16t.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="marca">
+                        <img src="./img/logo.cocarter.png" alt="logo.cocarter" class="marca_logo">
+                        <div class="marca_info">
+                            <h4 class="marca_titulo">Co.Carters</h4>
+                            <p class="marca_texto">Ropa para bebes y niños.
+                                talles desde RN a 6t.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="marca">
+                        <img src="./img/logo-naranjo.b.jpg" alt="logo.naranjo" class="marca_logo">
+                        <div class="marca_info">
+                            <h4 class="marca_titulo">Naranjo</h4>
+                            <p class="marca_texto">Ropa para bebes y niños.
+                                talles desde RN a 16t.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            </div>
 
-    <footer>
-        <ul class="ul_footer">
-            <a href="./index.html">
-                <li class="li_navbar active">Inicio
-            </a></li>
-            <a href="./pages/quienes-somos.html">
-                <li class="li_navbar">Quiénes Somos
-            </a></li>
-            <a href="./pages/tienda-online.html">
-                <li class="li_navbar">Tienda Online
-            </a></li>
-        </ul>
-    </footer>
-
-    <script src="./main/main.js"></script>
+        </main>
+    </div>
 </body>
 
 </html>
