@@ -23,7 +23,7 @@ const productos = [
     {
         id: "body-03",
         titulo: "Body 03",
-        imagen: "../img/b3.jpg",
+        imagen: "./img/b3.jpg",
         categoria: {
             nombre: "Bebes",
             id: "bebes"
@@ -33,7 +33,7 @@ const productos = [
     {
         id: "body-04",
         titulo: "Body 04",
-        imagen: "../img/b4.jpg",
+        imagen: "./img/b4.jpg",
         categoria: {
             nombre: "Bebes",
             id: "bebes"
@@ -43,7 +43,7 @@ const productos = [
     {
         id: "body-05",
         titulo: "Body 05",
-        imagen: "../img/b5.jpg",
+        imagen: "./img/b5.jpg",
         categoria: {
             nombre: "Bebes",
             id: "bebes"
@@ -53,7 +53,7 @@ const productos = [
     {
         id: "body-06",
         titulo: "Body 06",
-        imagen: "../img/b6.jpg",
+        imagen: "./img/b6.jpg",
         categoria: {
             nombre: "Bebes",
             id: "bebes"
@@ -63,7 +63,7 @@ const productos = [
     {
         id: "body-07",
         titulo: "Body 07",
-        imagen: "../img/b7.jpg",
+        imagen: "./img/b7.jpg",
         categoria: {
             nombre: "Bebes",
             id: "bebes"
@@ -73,7 +73,7 @@ const productos = [
     {
         id: "body-08",
         titulo: "Body 08",
-        imagen: "../img/b8.jpg",
+        imagen: "./img/b8.jpg",
         categoria: {
             nombre: "Bebes",
             id: "bebes"
@@ -83,7 +83,7 @@ const productos = [
     {
         id: "body-09",
         titulo: "Body 09",
-        imagen: "../img/b9.jpg",
+        imagen: "./img/b9.jpg",
         categoria: {
             nombre: "Bebes",
             id: "bebes"
@@ -93,7 +93,7 @@ const productos = [
     {
         id: "body-10",
         titulo: "Body 10",
-        imagen: "../img/b10.jpg",
+        imagen: "./img/b10.jpg",
         categoria: {
             nombre: "Bebes",
             id: "bebes"
@@ -103,7 +103,7 @@ const productos = [
     {
         id: "body-11",
         titulo: "Body 11",
-        imagen: "../img/b11.jpg",
+        imagen: "./img/b11.jpg",
         categoria: {
             nombre: "Bebes",
             id: "bebes"
@@ -113,7 +113,7 @@ const productos = [
     {
         id: "body-12",
         titulo: "Body 12",
-        imagen: "../img/b5.jpg",
+        imagen: "./img/b5.jpg",
         categoria: {
             nombre: "Bebes",
             id: "bebes"
@@ -125,7 +125,7 @@ const productos = [
     {
         id: "ninos1",
         titulo: "Niños 01",
-        imagen: "../img/ninos1.jpeg",
+        imagen: "./img/ninos1.jpeg",
         categoria: {
             nombre: "Niños",
             id: "ninos"
@@ -135,7 +135,7 @@ const productos = [
     {
         id: "ninos2",
         titulo: "Niños 02",
-        imagen: "../img/ninos2.jpeg",
+        imagen: "./img/ninos2.jpeg",
         categoria: {
             nombre: "Niños",
             id: "ninos"
@@ -145,7 +145,7 @@ const productos = [
     {
         id: "ninos3",
         titulo: "Niños 03",
-        imagen: "../img/ninos3.jpeg",
+        imagen: "./img/ninos3.jpeg",
         categoria: {
             nombre: "Niños",
             id: "ninos"
@@ -155,7 +155,7 @@ const productos = [
     {
         id: "ninos4",
         titulo: "Niños 04",
-        imagen: "../img/ninos4.jpeg",
+        imagen: "./img/ninos4.jpeg",
         categoria: {
             nombre: "Niños",
             id: "ninos"
@@ -165,7 +165,7 @@ const productos = [
     {
         id: "ninos5",
         titulo: "Niños 05",
-        imagen: "../img/ninos5.jpeg",
+        imagen: "./img/ninos5.jpeg",
         categoria: {
             nombre: "Niños",
             id: "ninos"
@@ -175,7 +175,7 @@ const productos = [
     {
         id: "ninos6",
         titulo: "Niños 06",
-        imagen: "../img/ninos6.jpeg",
+        imagen: "./img/ninos6.jpeg",
         categoria: {
             nombre: "Niños",
             id: "ninos"
@@ -185,7 +185,7 @@ const productos = [
     {
         id: "ninos7",
         titulo: "Niños 07",
-        imagen: "../img/ninos7.jpeg",
+        imagen: "./img/ninos7.jpeg",
         categoria: {
             nombre: "Niños",
             id: "ninos"
@@ -195,7 +195,7 @@ const productos = [
     {
         id: "ninos8",
         titulo: "Niños 08",
-        imagen: "../img/ninos8.jpeg",
+        imagen: "./img/ninos8.jpeg",
         categoria: {
             nombre: "Niños",
             id: "ninos"
@@ -205,7 +205,7 @@ const productos = [
     {
         id: "ninos9",
         titulo: "Niños 09",
-        imagen: "../img/ninos9.jpeg",
+        imagen: "./img/ninos9.jpeg",
         categoria: {
             nombre: "Niños",
             id: "ninos"
@@ -215,7 +215,7 @@ const productos = [
     {
         id: "ninos10",
         titulo: "Niños 10",
-        imagen: "../img/ninos10.jpeg",
+        imagen: "./img/ninos10.jpeg",
         categoria: {
             nombre: "Niños",
             id: "ninos"
@@ -225,7 +225,7 @@ const productos = [
     {
         id: "ninos11",
         titulo: "Niños 11",
-        imagen: "../img/ninos11.jpeg",
+        imagen: "./img/ninos11.jpeg",
         categoria: {
             nombre: "Niños",
             id: "ninos"
@@ -235,7 +235,7 @@ const productos = [
     {
         id: "ninos12",
         titulo: "Niños 12",
-        imagen: "../img/ninos12.jpeg",
+        imagen: "./img/ninos12.jpeg",
         categoria: {
             nombre: "Niños",
             id: "ninos"
@@ -248,7 +248,7 @@ const productos = [
     {
         id: "accesorio1",
         titulo: "Accesorio 01",
-        imagen: "../img/a1.jpg",
+        imagen: "./img/a1.jpg",
         categoria: {
             nombre: "Accesorios",
             id: "accesorios"
@@ -258,7 +258,7 @@ const productos = [
     {
         id: "accesorio2",
         titulo: "Accesorio 02",
-        imagen: "../img/a2.jpg",
+        imagen: "./img/a2.jpg",
         categoria: {
             nombre: "Accesorios",
             id: "accesorios"
@@ -268,7 +268,7 @@ const productos = [
     {
         id: "accesorio3",
         titulo: "Accesorio 03",
-        imagen: "../img/a3.jpg",
+        imagen: "./img/a3.jpg",
         categoria: {
             nombre: "Accesorios",
             id: "accesorios"
@@ -278,7 +278,7 @@ const productos = [
     {
         id: "accesorio4",
         titulo: "Accesorio 04",
-        imagen: "../img/a4.jpg",
+        imagen: "./img/a4.jpg",
         categoria: {
             nombre: "Accesorios",
             id: "accesorios"
@@ -288,7 +288,7 @@ const productos = [
     {
         id: "accesorio5",
         titulo: "Accesorio 05",
-        imagen: "../img/a5.jpg",
+        imagen: "./img/a5.jpg",
         categoria: {
             nombre: "Accesorios",
             id: "accesorios"
@@ -298,7 +298,7 @@ const productos = [
     {
         id: "accesorio6",
         titulo: "Accesorio 06",
-        imagen: "../img/a6.jpg",
+        imagen: "./img/a6.jpg",
         categoria: {
             nombre: "Accesorios",
             id: "accesorios"
@@ -308,7 +308,7 @@ const productos = [
     {
         id: "accesorio7",
         titulo: "Accesorio 07",
-        imagen: "../img/a7.jpg",
+        imagen: "./img/a7.jpg",
         categoria: {
             nombre: "Accesorios",
             id: "accesorios"
@@ -318,7 +318,7 @@ const productos = [
     {
         id: "accesorio8",
         titulo: "Accesorio 08",
-        imagen: "../img/a8.jpg",
+        imagen: "./img/a8.jpg",
         categoria: {
             nombre: "Accesorios",
             id: "accesorios"
@@ -328,7 +328,7 @@ const productos = [
     {
         id: "accesorio9",
         titulo: "Accesorio 09",
-        imagen: "../img/a9.jpg",
+        imagen: "./img/a9.jpg",
         categoria: {
             nombre: "Accesorios",
             id: "accesorios"
@@ -338,7 +338,7 @@ const productos = [
     {
         id: "accesorio10",
         titulo: "Accesorio 10",
-        imagen: "../img/a10.jpg",
+        imagen: "./img/a10.jpg",
         categoria: {
             nombre: "Accesorios",
             id: "accesorios"
@@ -348,7 +348,7 @@ const productos = [
     {
         id: "accesorio11",
         titulo: "Accesorio 11",
-        imagen: "../img/a11.jpg",
+        imagen: "./img/a11.jpg",
         categoria: {
             nombre: "Accesorios",
             id: "accesorios"
