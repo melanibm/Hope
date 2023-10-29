@@ -88,12 +88,12 @@ aside {
     font-size: .85rem;
     border-top-left-radius: 1rem;
     border-bottom-left-radius: 1rem;
+    width: 100%;
 
 }
 .boton-menu.active {
     background-color: var(--clr-rose);
     color: var(--clr-main);
-    width: 100%;
 }
 .boton-carrito {
     margin-top: 2rem;   
@@ -206,6 +206,8 @@ main {
     border: 0;
     background-color: transparent;
     color: var(--clr-red);
+    cursor: pointer;
+    
 }
 .carrito-acciones {
     display: flex;

@@ -1,67 +1,108 @@
-console.log("Hola, bienvenido a la tienda online")
-//agregar cartel de bienvenida
+let productosEnCarrito = localStorage.getItem("productos-en-carrito");
+productosEnCarrito = JSON.parse(productosEnCarrito);
 
-const productos = [
-    { id: 1, nombre: "Body", precio: 3000 },
-    { id: 2, nombre: "BodyDiseños", precio: 3500 },
-    { id: 3, nombre: "Accesorios", precio: 3500 }
-];
+const contenedorCarritoVacio = document.querySelector("#carrito-vacio");
+const contenedorCarritoProductos = document.querySelector("#carrito-productos");
+const contenedorCarritoAcciones = document.querySelector("#carrito-acciones");
+const contenedorCarritoComprado = document.querySelector("#carrito-comprado");
+let botonesEliminnar = document.querySelectorAll(".carrito-producto-elliminar");
+const botonVaciar = document.querySelector("#carrito-acciones-vaciar");
+const contenedorTotal = document.querySelector("#total");
+const botonComprar = document.querySelector("#carrito-acciones-comprar")
 
-const COSTOENVIO = 500;
+function cargarProductosCarrito() {
 
-function obtenerPrecioProducto(id) {
-    const producto = productos.find(p => p.id === id);
-    return producto ? producto.precio : null;
-}
+    if (productosEnCarrito && productosEnCarrito.length > 0) {
 
-// Ingreso de productos seleccionados
-alert("Bienvenido, Nuestros productos son:\n1-Body\n2-Body Diseños\n3-Accesorios");
-let productosSeleccionados = [];
-let conteo = 0;
-let total = 0;
-let primerProductoIngresado = false; // Variable para rastrear si se ingresó el primer producto
+        contenedorCarritoVacio.classList.add("disabled");
+        contenedorCarritoProductos.classList.remove("disabled");
+        contenedorCarritoAcciones.classList.remove("disabled");
+        contenedorCarritoComprado.classList.add("disabled");
 
-// Ingreso de más de un producto
-while (true) {
-    const opcion = prompt("¿Qué producto desea comprar? (Ingrese 'finalizar' para terminar)");
+        contenedorCarritoProductos.innerHTML = "";
 
-    if (opcion.trim().toLowerCase() === "finalizar") {
-        break;
-    }
+        productosEnCarrito.forEach(producto => {
 
-    const productoId = parseInt(opcion);
-    const precio = obtenerPrecioProducto(productoId);
+            const div = document.createElement("div");
+            div.classList.add("carrito-producto");
+            div.innerHTML = `
+                <img class="carrito-producto-imagen" src="${producto.imagen}" alt="${producto.titulo}">
+                <div class="carrito-producto-titulo">
+                    <small>Título</small>
+                    <h3>${producto.titulo}</h3>
+                </div>
+                <div class="carrito-producto-cantidad">
+                    <small>Cantidad</small>
+                    <p>${producto.cantidad}</p>
+                </div>
+                <div class="carrito-producto-precio">
+                    <small>Precio</small>
+                    <p>${producto.precio}</p>
+                </div>
+                <div class="carrito-producto-subtotal">
+                    <small>Subtotal</small>
+                    <p>${producto.precio * producto.cantidad}</p>
+                </div>
+                <button class="carrito-producto-eliminar" id= "${producto.id}"><i class="bi bi-trash3-fill"></i></button>
+            `;
+            contenedorCarritoProductos.append(div)
+        })
 
-    if (precio !== null) {
-        productosSeleccionados.push({ id: productoId, precio });
-        total += precio;
-        conteo++;
-
-        if (!primerProductoIngresado) {
-            alert(`¡Gracias por seleccionar tu primer producto! El producto #${conteo} ingresado es ${productos.find(p => p.id === productoId).nombre} y va un total de: ${total}`);
-            primerProductoIngresado = true; // Cambia el estado a "true" después del primer producto
-        } else {
-            console.log(`El producto #${conteo} ingresado es ${productos.find(p => p.id === productoId).nombre} y va un total de: ${total}`);
-            alert(`Producto #${conteo}: ${productos.find(p => p.id === productoId).nombre}\nTotal acumulado: ${total}`);
-        }
     } else {
-        alert("Ingrese una opción válida");
+        contenedorCarritoVacio.classList.remove("disabled");
+        contenedorCarritoProductos.classList.add("disabled");
+        contenedorCarritoAcciones.classList.add("disabled");
+        contenedorCarritoComprado.classList.add("disabled");
+
     }
+
+    actualizarBotonesEliminar();
+    actualizarTotal();
 }
 
+cargarProductosCarrito();
 
-// Si se requiere envío
-const envio = prompt("El costo del envío a domicilio es $500. ¿Desea agregarlo?");
-let direccion;
-let celular;
+function actualizarBotonesEliminar() {
+    botonesEliminnar = document.querySelectorAll(".carrito-producto-eliminar");
 
-if (envio.trim().toLowerCase() === "si") {
-    direccion = prompt("Ingrese la dirección de envío");
-    celular = prompt("Ingrese su número de celular");
-    total += COSTOENVIO;
-    console.log(`El pedido tiene valor total de: ${total}. La dirección de envío es: ${direccion}. Su celular para coordinar es ${celular}`);
-    alert(`Gracias por tu compra! El total a pagar es: ${total}`);
-} else {
-    console.log(`El pedido tiene un precio total de: ${total}. Retira en la tienda`);
-    alert(`Gracias por su compra, su total es: ${total}. Podrá retirar su pedido a partir de las 24hs hábiles.`);
+    botonesEliminnar.forEach(boton => {
+        boton.addEventListener("click", eliminarDelCarrito);
+    })
 }
+
+function eliminarDelCarrito(e) {
+    const idBoton = e.currentTarget.id;
+    const index = productosEnCarrito.findIndex(producto => producto.id === idBoton);
+
+    productosEnCarrito.splice(index, 1);
+    cargarProductosCarrito();
+
+    localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito));
+
+}
+botonVaciar.addEventListener("click", vaciarCarrito);
+function vaciarCarrito() {
+
+    productosEnCarrito.length = 0;
+    localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito));
+    cargarProductosCarrito();
+}
+
+function actualizarTotal() {
+    const totalCalculado = productosEnCarrito.reduce((acc, producto) => acc + (producto.precio * producto.cantidad), 0);
+    total.innerText = `$${totalCalculado}`;
+}
+
+botonComprar.addEventListener("click", comprarCarrito);
+function comprarCarrito() {
+
+    productosEnCarrito.length = 0;
+    localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito));
+    
+    contenedorCarritoVacio.classList.add("disabled");
+    contenedorCarritoProductos.classList.add("disabled");
+    contenedorCarritoAcciones.classList.add("disabled");
+    contenedorCarritoComprado.classList.remove("disabled");
+
+}
+
