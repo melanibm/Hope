@@ -3,7 +3,7 @@ const productos = [
     {
         id: "body-01",
         titulo: "Body 01",
-        imagen: "../img/b1.jpg",
+        imagen: "./img/b1.jpg",
         categoria: {
             nombre: "Bebes",
             id: "bebes"
@@ -13,7 +13,7 @@ const productos = [
     {
         id: "body-02",
         titulo: "Body 02",
-        imagen: "../img/b2.jpg",
+        imagen: "./img/b2.jpg",
         categoria: {
             nombre: "Bebes",
             id: "bebes"
